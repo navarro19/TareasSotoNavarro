@@ -1,5 +1,6 @@
 # Función 1, capaz de alternar mayúsculas y minúsculas en una cadena
 def invert_case(cadena):
+    valorsinuso = ""
     cadenainv = ""  # la cadenainv será el resultado invertido
     if not isinstance(cadena, str):  # compara el tipo de dato
         codigo = -16  # Entrada no es string
@@ -20,13 +21,13 @@ def invert_case(cadena):
         codigo = 0  # Éxito
     return [codigo, cadenainv]
 
-# Función 2, devuelve números primos entre 1 y la base
+          # Función 2, devuelve números primos entre 1 y la base
 
 
 def numero_primo(base):
     x = isinstance(base, int)
     y = isinstance(base, bool)
-    if not x or y:  # Es entero?
+    if (not x or y):  # Es entero?
         codigo = -64  # no es un entero
         primos = None
     elif base > 100:  # Es menor a 100?
